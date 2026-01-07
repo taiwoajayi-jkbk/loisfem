@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loisfem Nigeria Limited | Premium Building Materials</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        :root { 
+            --dangote-blue: #0054A6; 
+            --dangote-red: #ED1C24; 
+            --dark: #1A1C25; 
+            --white: #FFFFFF; 
+            --light: #F4F7F6; 
+            --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+        body { font-family: 'Open Sans', sans-serif; color: var(--dark); line-height: 1.6; overflow-x: hidden; background: var(--white); }
+        h1, h2, h3, .logo { font-family: 'Montserrat', sans-serif; }
+
+        /* --- NAVIGATION --- */
+        header { 
+            background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px);
+            padding: 15px 8%; display: flex; justify-content: space-between; align-items: center; 
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; 
+        }
+        .logo { font-size: 28px; font-weight: 800; text-decoration: none; color: var(--dangote-blue); letter-spacing: -1px; }
+        .logo span { color: var(--dangote-red); }
+        nav a { margin-left: 30px; text-decoration: none; color: var(--dark); font-weight: 600; font-size: 15px; transition: var(--transition); }
+        nav a:hover { color: var(--dangote-blue); }
+
+        /* --- HERO SECTION --- */
+        .hero { 
+            height: 75vh; min-height: 550px;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('construction_site.png'); 
+            background-size: cover; background-position: center; background-attachment: fixed; 
+            display: flex; align-items: center; color: white; padding: 0 8%;
+        }
+        .hero-content { max-width: 850px; }
+        .hero h1 { font-size: 4rem; line-height: 1.1; margin-bottom: 20px; text-shadow: 2px 4px 10px rgba(0,0,0,0.3); }
+        .hero h1 span { color: var(--dangote-red); }
+        .hero p { font-size: 1.3rem; margin-bottom: 35px; opacity: 0.95; }
+
+        .btn { 
+            background: var(--dangote-red); color: white; padding: 18px 45px; 
+            text-decoration: none; border-radius: 6px; font-weight: 800; 
+            display: inline-block; transition: var(--transition);
+            text-transform: uppercase; border: none; cursor: pointer;
+            box-shadow: 0 4px 15px rgba(237, 28, 36, 0.3);
+        }
+        .btn:hover { background: #c41219; transform: translateY(-3px); box-shadow: 0 8px 25px rgba(237, 28, 36, 0.5); }
+
+        /* --- ABOUT --- */
+        section { padding: 80px 8%; }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+        .about-text h2 { font-size: 2.8rem; color: var(--dangote-blue); margin-bottom: 25px; }
+        .img-container { border-radius: 20px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.15); border: 8px solid white; }
+        .img-container img { width: 100%; height: auto; display: block; }
+
+        /* --- TESTIMONIAL MARQUEE --- */
+        .testimonial-section { background: var(--light); padding: 100px 0; overflow: hidden; border-top: 1px solid #eee; }
+        .marquee { display: flex; width: max-content; animation: scroll 60s linear infinite; }
+        .marquee:hover { animation-play-state: paused; }
+        .testimonial-card {
+            background: white; min-width: 380px; margin: 0 25px; padding: 40px; 
+            border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.04); 
+            border-bottom: 6px solid var(--dangote-blue); transition: var(--transition);
+        }
+        .testimonial-card:hover { transform: translateY(-10px); border-bottom-color: var(--dangote-red); }
+        
+        @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+        .btn-review {
+            background: linear-gradient(135deg, var(--dangote-blue) 0%, #003366 100%);
+            color: white; padding: 20px 50px; border-radius: 50px; font-weight: 800;
+            border: none; cursor: pointer; transition: var(--transition);
+            box-shadow: 0 10px 30px rgba(0, 84, 166, 0.3);
+            display: inline-flex; align-items: center; gap: 12px; font-size: 16px; letter-spacing: 1px;
+        }
+
+        /* --- CONTACT BOX (PERFECT ALIGNMENT) --- */
+        .contact-box { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            border-radius: 30px; 
+            overflow: hidden; 
+            box-shadow: 0 30px 80px rgba(0,0,0,0.08);
+            background: white;
+            min-height: 550px;
+        }
+        .contact-col {
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Vertical Center on Web */
+        }
+        .contact-info { background: var(--dangote-blue); color: white; }
+        .contact-form { background: white; }
+        
+        .contact-form input, .contact-form textarea { 
+            width: 100%; padding: 15px; margin-bottom: 15px; border: 1px solid #ddd; 
+            border-radius: 10px; font-family: inherit; background: #f9f9f9;
+        }
+
+        /* --- MODAL --- */
+        #reviewModal { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:3000; align-items:center; justify-content:center; }
+        .modal-content { background:white; padding:50px; border-radius:25px; width:90%; max-width:550px; position:relative; }
+
+        /* --- WHATSAPP --- */
+        .whatsapp-float { position: fixed; bottom: 40px; right: 40px; background: #25D366; color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 35px; z-index: 1000; box-shadow: 0 10px 25px rgba(37,211,102,0.4); }
+
+        @media (max-width: 900px) { 
+            .about-grid, .contact-box { grid-template-columns: 1fr; } 
+            .hero h1 { font-size: 2.8rem; }
+            .contact-col { padding: 40px 30px; text-align: center; }
+            .contact-info a.btn { margin: 0 auto 30px auto; }
+            nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">LOIS<span>FEM</span></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact" style="color: var(--dangote-red)">Get Quote</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Strong Foundations,<br><span>Solid</span> Partnerships.</h1>
+            <p>Direct distributors of factory-grade Dangote & Lafarge cement, high-tensile steel, and premium aggregates.</p>
+            <a href="products.html" class="btn">Browse Materials</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-grid">
+        <div class="about-text">
+            <h2>Building with <span>Integrity</span></h2>
+            <p style="font-size: 1.15rem; color: #555;">At Loisfem Nigeria Limited, we eliminate the risk of "short-changing." We provide 100% accurate quantities of factory-sealed materials directly to your site.</p>
+        </div>
+        <div class="img-container">
+            <img src="construction_about_us.jpg" alt="Loisfem Quality Materials">
+        </div>
+    </section>
+
+    <div class="testimonial-section">
+        <h2 style="text-align:center; color: var(--dangote-blue); margin-bottom:50px;">What Customer Say</h2>
+        <div class="marquee">
+            <div class="testimonial-card"><p>"Accurate bag counts every time. Highly recommended."</p><h4>Engr. Chidi</h4><span>Project Manager</span></div>
+            <div class="testimonial-card"><p>"Cleanest granite I've found in Lagos. Zero mud."</p><h4>Mrs. Adebayo</h4><span>Homeowner</span></div>
+            <div class="testimonial-card"><p>"Their 12mm rods are top quality. Fast delivery."</p><h4>Oluwaseun T.</h4><span>Contractor</span></div>
+            <div class="testimonial-card"><p>"Honest pricing and reliable logistics."</p><h4>Alhaji Musa</h4><span>Developer</span></div>
+            <div class="testimonial-card"><p>"Transparent and trustworthy team."</p><h4>Nurse Joy</h4><span>Homeowner</span></div>
+            <div class="testimonial-card"><p>"Accurate bag counts every time. Highly recommended."</p><h4>Engr. Chidi</h4><span>Project Manager</span></div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 50px;">
+            <button onclick="openReviewModal()" class="btn-review">
+                <i class="fas fa-star" style="color: #FFD700;"></i>
+                SHARE YOUR EXPERIENCE
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="reviewModal">
+        <div class="modal-content">
+            <span onclick="closeReviewModal()" style="position:absolute; top:20px; right:25px; cursor:pointer; font-size:30px; color: #999;">×</span>
+            <h3>Submit a Review</h3><br>
+            <form action="https://formspree.io/f/lilfikky@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Full Name *" required>
+                <input type="text" name="role" placeholder="Role (e.g. Contractor) *" required>
+                <textarea name="review" placeholder="Your experience..." rows="5" required></textarea>
+                <button type="submit" class="btn" style="width:100%;">Post Review</button>
+            </form>
+        </div>
+    </div>
+
+    <section id="contact">
+        <div class="contact-box">
+            <div class="contact-col contact-info">
+                <h2 style="margin-bottom: 25px;">Let's Build Together</h2>
+                
+                <div style="margin-bottom: 25px;">
+                    <p style="font-weight: 600;">
+                        <i class="fas fa-map-marker-alt" style="color:var(--dangote-red); margin-right: 10px;"></i> 
+                        29 Aderemi Akeju Street, Soluyi, Gbagada, Lagos.
+                    </p>
+                    <p style="margin-top: 5px; padding-left: 25px; color: rgba(255,255,255,0.8); font-style: italic;">
+                        <i class="fas fa-landmark" style="font-size: 0.8rem; margin-right: 5px;"></i> 
+                        (Off Deeper Life HQ)
+                    </p>
+                </div>
+
+                <a href="https://maps.app.goo.gl/14KAET2TOxARvIf8Nlx9UwM" target="_blank" class="btn" style="background:rgba(255,255,255,0.1); border: 1px solid white; padding: 12px 25px; font-size: 13px; width: fit-content; margin-bottom: 40px;">
+                    <i class="fas fa-location-arrow"></i> OPEN IN GOOGLE MAPS
+                </a>
+
+                <p style="margin-bottom: 15px;"><i class="fas fa-phone-alt" style="color:var(--dangote-red); margin-right: 10px;"></i> +234 802 342 3933</p>
+                <p><i class="fas fa-envelope" style="color:var(--dangote-red); margin-right: 10px;"></i> loisfem2000@gmail.com</p>
+            </div>
+
+            <div class="contact-col contact-form">
+                <h3>Request a Quote</h3><br>
+                <form action="https://formspree.io/f/lilfikky@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Your Name *" required>
+                    <input type="tel" name="phone" placeholder="Phone Number *" required>
+                    <textarea name="request" placeholder="What materials do you need? (e.g. 100 bags of cement)..." rows="4" required></textarea>
+                    <button type="submit" class="btn" style="width: 100%;">Send Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 50px; background: var(--dark); color: white;">
+        © 2026 Loisfem Nigeria Limited. Authorized Distributor.
+    </footer>
+
+    <a href="https://wa.me/2348023423933" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <script>
+        function openReviewModal() { document.getElementById('reviewModal').style.display = 'flex'; }
+        function closeReviewModal() { document.getElementById('reviewModal').style.display = 'none'; }
+        window.onclick = function(e) { if(e.target == document.getElementById('reviewModal')) closeReviewModal(); }
+    </script>
+</body>
+</html>

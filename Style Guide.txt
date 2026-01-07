@@ -1,0 +1,30 @@
+Loisfem Nigeria Limited Style Guide
+
+1. The Color Palette
+These colors are chosen to represent reliability (Dark Blue), energy/action (Orange), and clarity (Light Grey).
+
+ColorHex CodeUsage
+Construction Orange #F27405  Buttons, Icons, Logo accents, Links.
+Deep Charcoal  #2B2D42  Primary text, Footer background, Headers.
+Off-White  #F8F9FA      Section backgrounds (to separate content).
+Pure White  #FFFFFF     Main body background, Card backgrounds.
+
+2. Typography (Fonts)
+Consistency in fonts is what separates a DIY site from a corporate site.
+Primary Heading (Montserrat): * Style: Bold (700) or Black (800).
+Use: Page titles, Section headers, Logo.
+Why: It feels architectural, sturdy, and modern.
+
+Body Text (Open Sans):
+Style: Regular (400) or Semi-Bold (600).
+Use: Paragraphs, Form labels, Menu items.
+Why: It is highly legible even on small mobile screens.
+
+3. UI Elements (Buttons & Shapes)
+To maintain the "Industrial-Premium" look, we use specific shapes:
+Corner Radius: 8px to 12px (Not too sharp, not too round).
+Button Shadow: 0 4px 15px rgba(242, 116, 5, 0.3) (Creates a subtle "glow" effect).
+Transitions: Always use 0.5s cubic-bezier for hover effects. It makes the site feel "expensive" and smooth.
+
+4. Spacing & Grid Logic
+The site follows a strict 8% side padding rule. This ensures that on extra-wide monitors, your content doesn't stretch to the very edges, which is hard to read.

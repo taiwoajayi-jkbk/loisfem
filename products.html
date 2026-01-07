@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Materials | Loisfem Nigeria Limited</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        :root { 
+            --dangote-blue: #0054A6; 
+            --dangote-red: #ED1C24; 
+            --dark: #1A1C25; 
+            --white: #FFFFFF; 
+            --light: #F4F7F6; 
+            --transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: 'Open Sans', sans-serif; 
+            background: var(--light); 
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header { 
+            background: var(--white); 
+            padding: 15px 8%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08); 
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .logo { font-family: 'Montserrat', sans-serif; font-size: 24px; font-weight: 800; text-decoration: none; color: var(--dangote-blue); }
+        .logo span { color: var(--dangote-red); }
+        nav a { margin-left: 25px; text-decoration: none; color: var(--dark); font-weight: 600; }
+
+        .container { padding: 60px 8%; }
+        
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h1 { color: var(--dangote-blue); font-size: 2.5rem; margin-bottom: 10px; font-family: 'Montserrat', sans-serif; }
+        .section-title p { color: #666; font-size: 1.1rem; }
+
+        /* --- PRODUCT CARDS --- */
+        .product-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+            margin-bottom: 80px; 
+        }
+        .card { 
+            background: white; 
+            border-radius: 15px; 
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+
+        .product-img {
+            width: 100%;
+            height: 250px; /* Consistent height for all product photos */
+            background: #ddd;
+            overflow: hidden;
+        }
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* This ensures photos fill the box without stretching */
+        }
+
+        .product-content { padding: 25px; flex-grow: 1; }
+        .product-content h3 { font-family: 'Montserrat', sans-serif; color: var(--dangote-blue); margin-bottom: 10px; }
+        .product-content p { color: #555; font-size: 0.95rem; margin-bottom: 15px; }
+        
+        .tag { 
+            background: var(--dangote-blue); color: white; padding: 3px 10px; 
+            border-radius: 4px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase;
+        }
+
+        /* --- QUOTE SECTION --- */
+        .quote-box { 
+            background: white; padding: 45px; border-radius: 20px; 
+            max-width: 800px; margin: 0 auto; box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            border-top: 8px solid var(--dangote-red);
+        }
+        .quote-box h2 { text-align: center; color: var(--dangote-blue); margin-bottom: 30px; font-family: 'Montserrat', sans-serif; }
+        input, select, textarea { width: 100%; padding: 15px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit; }
+        button { background: var(--dangote-red); color: white; border: none; padding: 18px; width: 100%; font-weight: 800; border-radius: 8px; cursor: pointer; transition: 0.3s; }
+        button:hover { background: #c41219; }
+
+        footer { text-align: center; padding: 40px; color: #888; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">LOIS<span>FEM</span></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html" style="color:var(--dangote-red)">Products</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="section-title">
+            <h1>Our Material Inventory</h1>
+            <p>Sourced directly from manufacturers to ensure 100% quality.</p>
+        </div>
+
+        <div class="product-grid">
+            <div class="card">
+                <div class="product-img">
+                    <img src="Product_Photos/Cement_Truck_Discharge.jpeg" alt="Cement Supplies">
+                </div>
+                <div class="product-content">
+                    <span class="tag">Dangote & Lafarge</span>
+                    <h3 style="margin-top:10px;">Premium Cement</h3>
+                    <p>We supply in bulk and retail with guaranteed bag counts.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product-img">
+                    <img src="Product_Photos/Iron_Rod.jpg" alt="Iron Rods">
+                </div>
+                <div class="product-content">
+                    <span class="tag">TMT Steel</span>
+                    <h3 style="margin-top:10px;">Reinforced Steel</h3>
+                    <p>High-tensile iron rods ranging from 8mm to 25mm. Standard bundles for heavy-duty construction.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product-img">
+                    <img src="Product_Photos/Granite.jpg" alt="Granite Stones">
+                </div>
+                <div class="product-content">
+                    <span class="tag">Crushed Aggregate</span>
+                    <h3 style="margin-top:10px;">Crushed Granite</h3>
+                    <p>Clean, machine-crushed stones (3/4" and 1/2"). Essential for strong concrete casting and foundations.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product-img">
+                    <img src="Product_Photos/Sharp_Sand.jpg" alt="Sharp Sand">
+                </div>
+                <div class="product-content">
+                    <span class="tag">Washed Sand</span>
+                    <h3 style="margin-top:10px;">Sharp Sand</h3>
+                    <p>Double-washed sharp sand, free from clay. Ideal for decking, plastering, and block-making.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product-img">
+                    <img src="Product_Photos/Paints.png" alt="Premium Paints">
+                </div>
+                <div class="product-content">
+                    <span class="tag">Finishing</span>
+                    <h3 style="margin-top:10px;">Premium Paints</h3>
+                    <p>Durable interior and exterior paints. High-pigment finishes that withstand the Nigerian weather.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="quote-box">
+            <h2>Get a Price Quote</h2>
+            <form action="https://formspree.io/f/loisfem2000@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Your Name *" required>
+                <input type="tel" name="phone" placeholder="Phone Number *" required>
+                <select name="product">
+                    <option value="" disabled selected>Select Product</option>
+                    <option value="Cement">Cement</option>
+                    <option value="Steel">Iron Rods</option>
+                    <option value="Granite">Granite</option>
+                    <option value="Sand">Sharp Sand</option>
+                    <option value="Paints">Paints</option>
+                </select>
+                <textarea name="message" placeholder="Quantity and Delivery Location *" rows="4" required></textarea>
+                <button type="submit">Send Quote Request</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Loisfem Nigeria Limited. Building with Integrity.
+    </footer>
+
+</body>
+</html>

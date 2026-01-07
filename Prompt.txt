@@ -1,0 +1,89 @@
+Website Development Blueprint: Loisfem Nigeria Ltd.
+1. Brand Identity & Visual Language
+Prompt: "Act as a professional UI/UX Designer. Develop a high-conversion layout for a building materials distributor. The brand identity must feel industrial, trustworthy, and premium.
+
+Primary Colors: Dangote Blue (#0054A6) and Dangote Red (#ED1C24).
+
+Typography: Montserrat for bold, authoritative headings; Open Sans for clean, readable body text.
+
+UI Effects: Use 'Glassmorphism' (semi-transparent blur) for the navigation bar and subtle shadows for cards to create depth."
+
+2. High-Trust Hero & About Sections
+Prompt: "Write copy and code for a Hero section that emphasizes 'Solid Partnerships' and 'Integrity.' The core value proposition is preventing 'short-changing' by providing 100% accurate, factory-sealed quantities.
+
+Feature: Add a high-quality background image with a dark overlay to make white text pop.
+
+CTA: A prominent red button leading to products."
+
+3. Interactive Social Proof (The Testimonial Marquee)
+Prompt: "Create a CSS-only infinite horizontal scrolling marquee.
+
+Content: Populated with 15 short, positive customer reviews (e.g., 'Accurate bag counts,' 'Fast delivery').
+
+Interaction: The animation should pause on hover.
+
+Conversion Trigger: Below the marquee, add a 'Glass-style' button labeled 'SHARE YOUR EXPERIENCE' that triggers a feedback modal window."
+
+4. Technical Contact & Alignment (Web + Mobile)
+Prompt: "Build a dual-column 'Contact & Quote' section using CSS Grid.
+
+Constraint: Ensure 'Equal Height Alignment'—the blue info box on the left and the white form on the right must stay perfectly symmetrical on desktop.
+
+Landmark: Include the specific landmark '(Off Deeper Life HQ)' with a dedicated landmark icon.
+
+Mobile Logic: On screens smaller than 900px, stack the columns and center-align the text for better thumb-navigation."
+
+5. Backend Integration & Connectivity
+Prompt: "Integrate the following functional elements:
+
+Forms: All forms (Quotes and Reviews) must point to a Formspree endpoint (lilfikky@gmail.com).
+
+WhatsApp: A floating green button fixed to the bottom-right that opens a direct chat with +234 802 342 3933.
+
+Maps: A button that links directly to the business location on Google Maps using coordinates or a verified address string."
+
+🚀 How to use this document:
+To Update the Site: Paste any of these sections back into a chat and say: "Apply these rules but change the colors to [New Color]."
+
+To Build the Product Page: Use the Brand Identity prompt (Section 1) and ask the AI to: "Apply these styles to a product grid showing cement, sand, and iron rods."
+
+
+------------------------------------------------------------------------
+
+The Product Grid Prompt
+"Act as a Senior Frontend Developer. Create a Product Catalog Page (products.html) for Loisfem Nigeria Limited that matches the home page branding exactly.
+
+1. Layout & Styling: > * Use the same Sticky Navigation and Footer from the home page.
+
+Create a 'Product Header' section with a dark industrial background and the title 'Premium Materials'.
+
+Build a Responsive Grid (3 columns on Web, 1 column on Mobile) to display product cards.
+
+2. Product Card Design: Each card should include:
+
+A placeholder image area with a subtle hover zoom effect.
+
+A bold product title (e.g., 'Dangote Cement 50kg').
+
+A 'Price Tag' area (Style: Blue text, bold).
+
+A short description list (e.g., 'Grade 42.5R', 'Factory Sealed').
+
+A 'Request Quote' button that links directly to the Contact Section on the home page (index.html#contact).
+
+3. Inventory Items to Include: > * Cements: Dangote Cement, Lafarge Elephant Cement.
+
+Steel: 10mm, 12mm, and 16mm High-Tensile Iron Rods.
+
+Aggregates: 3/4 inch Granite, Sharp Sand, Filling Sand.
+
+4. Technical: > * Use the same CSS variables for --dangote-blue and --dangote-red.
+
+Ensure all buttons have the same hover transition and shadow effects as the home page."
+
+💡 Why this prompt works:
+Consistency: It forces the AI to use the same CSS variables, so your blue and red won't be slightly different shades.
+
+Navigation: It ensures the "Request Quote" button on a product actually sends the customer back to the form on your home page.
+
+User Experience: The "hover zoom" effect makes the site feel expensive and high-quality, which builds trust for large-scale buyers.
